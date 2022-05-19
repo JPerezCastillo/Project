@@ -1,0 +1,62 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Add Liste</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="">Title:</label>
+          <input [(ngModel)]="model.title" name="title" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Description: </label>
+          <textarea [(ngModel)]="model.description" name="description" type="text" class="form-control" ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input [(ngModel)]="model.amount" name="amount" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="unit">Unit:</label>
+          <!-- <input [(ngModel)]="model.unit" name="unit" type="text" class="form-control" placeholder="Stk,Liter,Kg"> -->
+          <select class="form-control" id="inputUnit" name="inputUnit" [(ngModel)]="model.unit">
+            <option *ngFor="let u of units" [value]="u">{{u}}<option>
+          </select>
+        </div>
+        <div class="form-group">
+          <ng-container *ngIf="model.id">
+            <label for="done">Done</label>
+            <input type="checkbox" name="inputDone" id="inputDone" [(ngModel)]="model.done">
+          </ng-container>
+        </div>
+        <button (click)="onSave()" class="btn btn-danger">Save</button>
+        <br>
+        <br>
+        <div>
+          <h3>Show Filter </h3>
+          <label for="BtnFilter">Filter the List: </label>
+          <select class="dropDown" id="filterList" name="filterList"[(ngModel)] ="selectedOption">
+            <option *ngFor="let f of filterOptions" [value]="f" >{{f}}</option>
+          </select>
+          <br>
+          <br>
+          <button (click)="filterList()" id="btnFilter">Filter</button>
+        </div>
+        <br>
+        <div>
+          <h3>Show Sort</h3>
+          <label for="btnSort">Sort the items: </label>
+          <select class="dropDown" id="sortItems" name="sortItems" [(ngModel)]="selectedSortOption">
+              <option *ngFor="let s of sortOptions" [value]="s">
+                  {{s}}
+              </option>
+          </select>
+          <br>
+          <button (click)="sortFunction()" id="btnSort">Sort</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

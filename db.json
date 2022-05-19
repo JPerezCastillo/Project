@@ -1,0 +1,118 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Mehl",
+      "description": "Mehl glatt",
+      "amount": 500,
+      "unit": "gramm",
+      "done": false
+    },
+    {
+      "id": 2,
+      "title": "Milch",
+      "description": "Bio",
+      "amount": 0.5,
+      "unit": "liter",
+      "done": true
+    },
+    {
+      "id": 3,
+      "title": "Eier",
+      "description": "Bio",
+      "amount": 8,
+      "uni": " Stk",
+      "done": true
+    },
+    {
+      "title": "Rice",
+      "done": false,
+      "description": "langkorn",
+      "amount": "2",
+      "unit": "Kg",
+      "id": 5
+    },
+    {
+      "title": "Ei",
+      "done": true,
+      "description": "natur",
+      "amount": "1",
+      "unit": "Stk",
+      "id": 6
+    },
+    {
+      "title": "Eier",
+      "done": false,
+      "description": "Natur",
+      "amount": "12",
+      "unit": "Stk",
+      "id": 8
+    },
+    {
+      "title": "Bohnen",
+      "done": true,
+      "description": "roten",
+      "amount": "3",
+      "unit": "Kg",
+      "id": 9
+    },
+    {
+      "title": "Coca Cola",
+      "done": false,
+      "description": "test",
+      "amount": "2",
+      "unit": "Liter",
+      "id": 10
+    },
+    {
+      "title": "Zucker",
+      "done": true,
+      "description": "weiss",
+      "amount": "2",
+      "unit": "Kg",
+      "id": 11
+    },
+    {
+      "title": "hallo",
+      "done": false,
+      "amount": "2",
+      "id": 12
+    },
+    {
+      "title": "Nudeln",
+      "done": true,
+      "description": "pasta",
+      "amount": "1",
+      "id": 13
+    },
+    {
+      "title": "Wine",
+      "done": false,
+      "amount": "1",
+      "id": 14
+    },
+    {
+      "title": "salami",
+      "done": true,
+      "amount": "10",
+      "unit": "deka",
+      "id": 15
+    },
+    {
+      "title": "Wasser",
+      "done": false,
+      "description": "flasche",
+      "amount": "1",
+      "unit": "liter",
+      "id": 16
+    },
+    {
+      "title": "Zwiebeln",
+      "done": false,
+      "description": "Rotes",
+      "amount": "1 ",
+      "unit": "Kilo",
+      "id": 17
+    }
+  ]
+}

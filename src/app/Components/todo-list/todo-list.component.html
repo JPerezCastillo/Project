@@ -1,0 +1,6 @@
+<app-list-form (onItemAddEvent)="addItem($event)" (onItemFilterEvent)="filterList($event)"(onItemSortEvent)="sortList($event)"></app-list-form>
+
+<ng-container *ngFor="let t of todos">
+<app-todo-item [todo]="t" (onItemDeleteEvent)="removeItem($event)" (onItemUpdateEvent)="updateItem($event)" > </app-todo-item>
+<br>
+</ng-container>

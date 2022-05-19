@@ -1,0 +1,38 @@
+<div class="container mt-4">
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col"> # </th>
+      <th scope="col"> Title</th>
+      <th scope="col"> Description</th>
+      <th scope="col"> Amount</th>
+      <th scope="col"> Unit </th>
+      <th scope="col"> Done </th>
+      <th scope="col"> Action </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>{{todo.id}} </th>
+      <td>{{todo.title}}</td>
+      <td> {{todo.description}}</td>
+      <td> {{todo.amount}}</td>
+      <td> {{todo.unit}}</td>
+      <td (click)="btnDone()"style="cursor: pointer;">{{todo.done ? "✅" : "⛔"}} </td>
+      <td><button (click)="btnDelete()"> Delete ❌ </button> </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+ 
+   <!-- <div>
+    <h3>{{todo.id}}</h3>
+    <h2>{{todo.title}}</h2>
+    <p>{{todo.description}}</p>
+    <p (click)="btnDone()">{{todo.done ? "✔" : "❌"}}</p>
+    <br>
+    <button (click)="btnDelete()">Delete ❌</button> <br>
+    <br>
+    </div> -->
