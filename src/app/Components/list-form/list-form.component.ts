@@ -30,12 +30,6 @@ export class ListFormComponent implements OnInit {
   }
 
   onSave(){
-    // if(this.model.title ===""){
-    //   alert("Please provide a title");
-    //   return;
-    // }
-    // this.todoApiService.createTodos(this.model);
-    // this.model=new Todo("");
     this.onItemAddEvent.emit(this.model);
     this.model = new Liste("");
   }
